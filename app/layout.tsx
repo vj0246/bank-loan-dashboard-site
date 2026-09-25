@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const image = "https://bank-loan-ledger-vj.citrus-amber-6001.chatgpt.site/og.png";
+const image = "https://bank-loan-ledger-vj.neev-jain244.chatgpt.site/og.png";
 
 export const metadata: Metadata = {
   title: "Loan Ledger | Historical Credit Outcomes",
