@@ -21,7 +21,9 @@ test("renders the historical loan dashboard", async () => {
   assert.match(html, /Loan Ledger \| Historical Credit Outcomes/);
   assert.match(html, /39,786/);
   assert.match(html, /14\.25/);
-  assert.match(html, /Fixed archive snapshot/);
+  assert.match(html, /Where did loan risk concentrate/);
+  assert.match(html, /Three signals to investigate/);
+  assert.match(html, /Descriptive evidence, not a forecast/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
 
