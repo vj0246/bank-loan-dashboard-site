@@ -3,7 +3,7 @@
 Interactive, aggregate-only dashboard for historical LendingClub loan outcomes.
 
 **Live dashboard:** https://bank-loan-dashboard-site.vercel.app/
-**Analysis and reproducible SQL:** https://github.com/vj0246/PowerBI_Dashboard
+**Analysis and reproducible SQL:** https://github.com/vj0246/CreditSight
 
 ## What this dashboard shows
 
@@ -13,7 +13,7 @@ The overall observed charge-off share is 5,670 / 39,786 = 14.25%. Grade A is 602
 
 ## Data flow
 
-The companion dashboard reads `app/loan-aggregates.json`, generated from the prepared historical CSV by [`tools/export_companion_data.py`](https://github.com/vj0246/PowerBI_Dashboard/blob/main/tools/export_companion_data.py). It contains grouped counts and sums, not loan-level rows. MySQL CTE and window-function scripts in the analysis repository provide independent checks. This Vercel site is a fixed snapshot; it does not automatically refresh from MySQL or OneDrive.
+The companion dashboard reads `app/loan-aggregates.json`, generated from the prepared historical CSV by [`tools/export_companion_data.py`](https://github.com/vj0246/CreditSight/blob/main/tools/export_companion_data.py). It contains grouped counts and sums, not loan-level rows. MySQL CTE and window-function scripts in the analysis repository provide independent checks. This Vercel site is a fixed snapshot; it does not automatically refresh from MySQL or OneDrive.
 
 ## Run locally
 
