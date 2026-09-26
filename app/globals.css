@@ -82,6 +82,7 @@ h3 { margin: 6px 0 0; font-size: 18px; letter-spacing: -.022em; }
 .baseline-mark { position: absolute; top: -4px; z-index: 1; width: 2px; height: 17px; background: #173d59; }
 
 .trend-scroll { overflow-x: auto; }
+.chart-scroll-hint { display: none; }
 .trend-chart { display: flex; gap: 9px; min-width: 500px; height: 240px; padding-bottom: 5px; border-bottom: 1px solid var(--line); }
 .trend-item { position: relative; display: flex; flex: 1; flex-direction: column; align-items: stretch; justify-content: end; min-width: 32px; height: 100%; padding: 0; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
 .trend-value { display: block; min-height: 19px; margin-bottom: 6px; overflow: hidden; color: var(--muted); font-size: 10px; text-align: center; white-space: nowrap; }
@@ -160,7 +161,7 @@ tbody tr:last-child td { border-bottom: 0; }
   .intro-copy { font-size: 13px; }
   .scope-select { width: 100%; margin-top: 19px; }
   .view-nav { gap: 5px; overflow-x: auto; }
-  .nav-item { padding: 8px 11px; white-space: nowrap; }
+  .nav-item { min-height: 44px; padding: 10px 11px; white-space: nowrap; }
   .nav-scope { display: none; }
   .report-content { padding-top: 21px; }
   .section-context { display: none; }
@@ -173,6 +174,7 @@ tbody tr:last-child td { border-bottom: 0; }
   .panel { padding: 21px 17px; }
   .panel-title { align-items: start; }
   .panel-title > span { display: none; }
+  .chart-scroll-hint { display: block; margin: 8px 0 0; color: var(--muted); font-size: 11px; }
   .risk-summary { grid-template-columns: 1fr; }
   .risk-summary section { min-height: 92px; }
   .risk-summary section + section { border-left: 0; border-top: 1px solid #527187; }

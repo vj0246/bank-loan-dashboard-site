@@ -57,7 +57,7 @@ function GradeBars({ period, compact = false }: { period: Period; compact?: bool
 
 function TrendBars({ items, selected, onSelect }: { items: TrendItem[]; selected: string; onSelect: (key: string) => void }) {
   const max = Math.max(...items.map((item) => item.metrics.fundedCents), 1);
-  return <div className="trend-scroll"><div className="trend-chart" role="group" aria-label="Original funded principal by issue period">
+  return <><div className="trend-scroll"><div className="trend-chart" role="group" aria-label="Original funded principal by issue period">
     {items.map((item) => <button
       key={item.key}
       type="button"
@@ -70,7 +70,7 @@ function TrendBars({ items, selected, onSelect }: { items: TrendItem[]; selected
       <span className="trend-bar" style={{ height: `${Math.max(3, 100 * item.metrics.fundedCents / max)}%` }} />
       <span className="trend-label">{item.label}</span>
     </button>)}
-  </div></div>;
+  </div></div><p className="chart-scroll-hint">Swipe chart to see every period.</p></>;
 }
 
 function OutcomeBars({ items }: { items: TrendItem[] }) {
