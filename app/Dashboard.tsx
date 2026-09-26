@@ -83,9 +83,9 @@ export default function Dashboard({ data }: { data: DashboardData }) {
 
       <div className="intro">
         <div>
-          <p className="intro-kicker">A credit outcomes study</p>
-          <h1>What happened after<br />the loans were issued?</h1>
-          <p className="intro-copy">Explore origination volume and eventual charge-offs across 39,786 resolved loans. Descriptive evidence, not a forecast.</p>
+          <p className="intro-kicker">Historical lending analysis / 2007-2011</p>
+          <h1>Loan portfolio outcomes</h1>
+          <p className="intro-copy">39,786 resolved loans. Compare funding, borrower risk, and observed charge-offs by issue period.</p>
         </div>
         <div className="scope-select">
           <label htmlFor="year">Issue year</label>
